@@ -28,7 +28,7 @@ with col1:
     if Wiek == []:
         Wiek = ['15-29', '30-39', '40-49', '50-59']
 with col2:
-    obrazek = "ZAUW.jpg"
+    obrazek = "zauw.jpg"
     st.image(obrazek, caption='',  width = 650)
 
 if Płeć == 'Kobiety':
