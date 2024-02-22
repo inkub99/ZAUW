@@ -19,7 +19,7 @@ reklama = reklama[reklama['tematyka']!='dodatki']
 #reklama = reklama[reklama['tematyka']!='męskie']
 reklama = reklama[reklama['tematyka']!='magazyny specjalistyczne']
 
-st.markdown("<h1 style='margin-top: -70px; text-align: center;'>Zuważalność</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='margin-top: -70px; text-align: center;'>Zuważalność reklam w prasie drukowanej</h1>", unsafe_allow_html=True)
 
 col1, col2 = st.columns([2,2])
 with col1:
@@ -87,4 +87,7 @@ styled_table = f"""
 
 # Wyświetl sformatowaną tabelę
 st.markdown(styled_table, unsafe_allow_html=True)
+
+st.markdown("""<div style="font-size:12px">Wskaźniki: Zauważalność reklamy.  Dane eye tracking: 2018-2021</div>""", unsafe_allow_html=True)
+
 
