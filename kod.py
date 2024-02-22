@@ -17,8 +17,8 @@ zmienne = ['PLEC','WIEK4','tematyka','wielkosc','Zauważalność']
 reklama = pd.read_csv('12_reklama.txt', usecols = zmienne, sep = '\t', decimal = ",")
 reklama.columns = ['PLEC','WIEK4','Tematyka','wielkosc','Zauważalność']
 reklama = reklama[reklama['Tematyka']!='dodatki']
-reklama = reklama.replace('męskie','magazyny budowlane, magazyny motoryzacyjne i magazyny popularno-naukowe')
-reklama = reklama.replace('magazyny specjalistyczne','magazyny budowlane, magazyny motoryzacyjne i magazyny popularno-naukowe')
+reklama = reklama.replace('męskie','magazyny budowlane, magazyny motoryzacyjne, magazyny popularno-naukowe')
+reklama = reklama.replace('magazyny specjalistyczne','magazyny budowlane, magazyny motoryzacyjne, magazyny popularno-naukowe')
 reklama = reklama.replace('kobiece poradniki/hobbystyczne','magazyny kobiece poradnikowe, magazyny hobbystyczne')
 reklama = reklama.replace('kobiece rozrywka/historie/people','magazyny poradniczo-rozrywkowe, magazyny people')
 reklama = reklama.replace('społeczne','magazyny opinii (społeczno-polityczne)')
@@ -32,7 +32,7 @@ with col2:
     obrazek = "zauw.jpg"
     st.image(obrazek, caption='',  width = 690)
 
-st.markdown("""<div style="font-size:16px"><span style="text-decoration: underline;">Średnia zauważalność reklam według tematyki</span></div>""", unsafe_allow_html=True)
+st.markdown("""<div style="font-size:16px"><span style="text-decoration: underline;">Średnia zauważalność reklam według grup celowych i tematyki</span></div>""", unsafe_allow_html=True)
 Płeć = st.radio("Wybierz płeć:", ['Wszyscy', 'Kobiety', 'Mężczyźni'], horizontal=True, index =0)
 Wiek = st.multiselect("Wybierz grupę wiekową:", ['15-29', '30-39', '40-49', '50-59'], default=['15-29', '30-39', '40-49', '50-59'])
 if Wiek == []:
