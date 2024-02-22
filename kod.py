@@ -28,11 +28,13 @@ st.markdown("<h1 style='margin-top: -70px; text-align: center;'>Zauważalność 
 
 col1, col2, col3 = st.columns([1,2,1])
 with col2:
-    st.markdown("""<div style="font-size:16px"><span style="text-decoration: underline;">Średnia zauważalność reklam (prawdopodobieństwo, że reklama będzie zauważona)</span></div>""", unsafe_allow_html=True)
+    st.markdown("<h3 style='margin-top: -70px; text-align: center;'>Średnia zauważalność reklam</h3>", unsafe_allow_html=True)
+    st.markdown("""<div style="font-size:12px">(prawdopodobieństwo, że reklama będzie zauważona)</div>""", unsafe_allow_html=True)
     obrazek = "zauw.jpg"
     st.image(obrazek, caption='',  width = 690)
 
-st.markdown("""<div style="font-size:16px"><span style="text-decoration: underline;">Średnia zauważalność reklam według grup celowych i tematyki</span></div>""", unsafe_allow_html=True)
+st.markdown("<h3 style='margin-top: -70px; text-align: center;'>Średnia zauważalność reklam według grup celowych i tematyki</h3>", unsafe_allow_html=True)
+
 Płeć = st.radio("Wybierz płeć:", ['Wszyscy', 'Kobiety', 'Mężczyźni'], horizontal=True, index =0)
 Wiek = st.multiselect("Wybierz grupę wiekową:", ['15-29', '30-39', '40-49', '50-59'], default=['15-29', '30-39', '40-49', '50-59'])
 if Wiek == []:
