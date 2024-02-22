@@ -105,6 +105,6 @@ styled_table = f"""
 # Wyświetl sformatowaną tabelę
 st.markdown(styled_table, unsafe_allow_html=True)
 
-st.markdown("""<div style="font-size:12px">Wskaźniki: Zauważalność reklamy (druk i e-wydania),  Dane eye tracking, Liczba przypadków = 13723</div>""", unsafe_allow_html=True)
+st.markdown("""<div style="font-size:12px">PBC badania eyetrackingowe dla wydań drukowanych i e-wydań, N=13 723</div>""", unsafe_allow_html=True)
 
 
