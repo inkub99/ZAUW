@@ -32,12 +32,12 @@ with col2:
     st.markdown("""<div style="font-size:12px">(prawdopodobieństwo, że reklama będzie zauważona)</div>""", unsafe_allow_html=True)
     st.markdown("""<div style="font-size:12px"></div>""", unsafe_allow_html=True)
 
-col1, col2, col3 = st.columns([0.55,2,1])
+col1, col2, col3 = st.columns([0.5,2,1])
 with col2:    
     obrazek = "zauw.jpg"
     st.image(obrazek, caption='',  width = 690)
 
-col1, col2, col3 = st.columns([0.95,3,0.1])
+col1, col2, col3 = st.columns([0.9,3,0.1])
 with col2:
     st.markdown("""<div style="font-size:20px; font-weight:bold"></div>""", unsafe_allow_html=True)
     st.markdown("""<div style="font-size:20px; font-weight:bold">Średnia zauważalność reklam według grup celowych i tematyki</div>""", unsafe_allow_html=True)
