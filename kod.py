@@ -71,7 +71,7 @@ df = df.applymap(lambda x: str('{:,.1f}%'.format(x)).replace('.',','))
 df.iloc[6,2] = '-'
 
 if Płeć == 'Mężczyźni':
-    df.iloc[2,2] = '-'
+    df.iloc[5,2] = '-'
 df = df.reset_index()
 df.index = df.index  + 1
 
