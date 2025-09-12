@@ -115,9 +115,6 @@ styled_table = f"""
   .st-emotion-cache-17b17hr th, .st-emotion-cache-17b17hr td {{
       border: 1px solid #EBEBEB;
   }}
-  .st-bx {{
-      background-color: #F7F7F7;
-  }}
 </style>
 {html_table}
 """
