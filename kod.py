@@ -105,8 +105,8 @@ styled_table = f"""
         width: 100%;
         margin: auto;
         overflow-x: auto;
-        border-radius: 10px;
         border: 1px solid #EBEBEB;
+        overflow: hidden;
     }}
     th, td {{
         padding: 10px;
