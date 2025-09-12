@@ -3,8 +3,9 @@ import pandas as pd
 import numpy as np
 import openpyxl
 from datetime import datetime
+import os
 #2*2
-
+os.environ["STREAMLIT_SERVER_FILE_WATCHER_TYPE"] = "none"
 primary_color = "#00AADB"
 
 st.set_page_config(
