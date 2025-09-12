@@ -105,6 +105,8 @@ html_table = f"<div style='margin: auto;'>{html_table}</div>"
 styled_table = f"""
 <style>
   table {{
+    width: 100%;
+    margin: auto;
     border: 1px solid #EBEBEB !important;
     border-radius: 10px !important;
     overflow: hidden;
