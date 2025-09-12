@@ -16,13 +16,16 @@ st.set_page_config(
 
 st.markdown("""
 <style>
-/* Wyłączenie i ukrycie paska dekoracji */
-div[data-testid="stDecoration"] {
-    background-image: none !important;
-    background: none !important;
-    height: 0 !important;
-    display: none !important;
-}
+    /* Wyłączenie i ukrycie paska dekoracji */
+    div[data-testid="stDecoration"] {
+        background-image: none !important;
+        background: none !important;
+        height: 0 !important;
+        display: none !important;
+    }
+    .st-emotion-cache-z5fcl4 {
+        padding-top: 2.5rem;
+    }
 </style>
 """, unsafe_allow_html=True)
 
