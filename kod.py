@@ -60,7 +60,7 @@ st.markdown("""<div style="font-size:20px; font-weight:bold; text-align:left; co
 
 
 Płeć = st.radio("Wybierz płeć:", ['Wszyscy', 'Kobiety', 'Mężczyźni'], horizontal=True, index =0)
-Wiek = st.multiselect("Wybierz grupę wiekową:", ['15-29', '30-39', '40-49', '50-59'], default=['15-29', '30-39', '40-49', '50-59'])
+Wiek = st.multiselect("Wybierz grupę wiekową:", ['15-29', '30-39', '40-49', '50-59'], default=['15-29', '30-39', '40-49', '50-59'], placeholder="Wybierz opcję")
 if Wiek == []:
     Wiek = ['15-29', '30-39', '40-49', '50-59']
 
