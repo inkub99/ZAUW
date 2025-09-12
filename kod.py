@@ -115,6 +115,18 @@ styled_table = f"""
         white-space: nowrap;  /* Unikaj przerywania tekstu na wielu linijkach */
         color: #5E6781;
     }}
+    table th:first-child {{
+        border-top-left-radius: 10px;
+    }}
+    table th:last-child {{
+        border-top-right-radius: 10px;
+    }}
+    table tr:last-child td:first-child {{
+        border-bottom-left-radius: 10px;
+    }}
+    table tr:last-child td:last-child {{
+        border-bottom-right-radius: 10px;
+    }}
 </style>
 {html_table}
 """
