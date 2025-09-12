@@ -105,12 +105,15 @@ styled_table = f"""
         width: 100%;
         margin: auto;
         overflow-x: auto;
+        border-radius: 10px;
+        border: 1px solid #EBEBEB;
     }}
     th, td {{
         padding: 10px;
         text-align: left;
-        border: 1px solid #ddd;
+        border: 1px solid #EBEBEB;
         white-space: nowrap;  /* Unikaj przerywania tekstu na wielu linijkach */
+        color: #5E6781;
     }}
 </style>
 {html_table}
