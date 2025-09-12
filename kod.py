@@ -110,7 +110,7 @@ styled_table = f"""
   }}
   th, td {{ border: 1px solid #EBEBEB; padding: 10px; white-space: nowrap; color:#5E6781; }}
   .st-emotion-cache-17b17hr th, .st-emotion-cache-17b17hr td {{
-      border: none;
+      border: 1px solid #EBEBEB;
   }}
 </style>
 {html_table}
