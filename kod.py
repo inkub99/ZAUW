@@ -101,32 +101,14 @@ html_table = f"<div style='margin: auto;'>{html_table}</div>"
 
 styled_table = f"""
 <style>
-    table {{
-        width: 100%;
-        margin: auto;
-        overflow-x: auto;
-        border: 1px solid #EBEBEB;
-        overflow: hidden;
-    }}
-    th, td {{
-        padding: 10px;
-        text-align: left;
-        border: 1px solid #EBEBEB;
-        white-space: nowrap;  /* Unikaj przerywania tekstu na wielu linijkach */
-        color: #5E6781;
-    }}
-    table th:first-child {{
-        border-top-left-radius: 10px;
-    }}
-    table th:last-child {{
-        border-top-right-radius: 10px;
-    }}
-    table tr:last-child td:first-child {{
-        border-bottom-left-radius: 10px;
-    }}
-    table tr:last-child td:last-child {{
-        border-bottom-right-radius: 10px;
-    }}
+  table {{
+    border: 1px solid #EBEBEB !important;
+    border-radius: 10px !important;
+    overflow: hidden;
+    border-collapse: separate !important;
+    border-spacing: 0 !important;
+  }}
+  th, td {{ border: 1px solid #EBEBEB; padding: 10px; white-space: nowrap; color:#5E6781; }}
 </style>
 {html_table}
 """
