@@ -53,7 +53,7 @@ reklama = reklama.replace('telewizyjne','magazyny telewizyjne')
 col1, col2, col3 = st.columns([0.9,3,0.1])
 with col2:
     st.markdown("""<div style="font-size:20px; font-weight:bold"></div>""", unsafe_allow_html=True)
-    st.markdown("""<div style="font-size:20px; font-weight:bold">Średnia zauważalność reklam według grup celowych i tematyki</div>""", unsafe_allow_html=True)
+    st.markdown("""<div style="font-size:20px; font-weight:bold; text-align:left; color:#273F4A;">Średnia zauważalność reklam według grup celowych i tematyki</div>""", unsafe_allow_html=True)
 
 
 Płeć = st.radio("Wybierz płeć:", ['Wszyscy', 'Kobiety', 'Mężczyźni'], horizontal=True, index =0)
