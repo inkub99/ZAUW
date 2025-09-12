@@ -125,6 +125,6 @@ styled_table = f"""
 # Wyświetl sformatowaną tabelę
 st.markdown(styled_table, unsafe_allow_html=True)
 
-st.markdown("""<div style="font-size:12px">Źródło: PBC badania eyetrackingowe dla wydań drukowanych i e-wydań, N=13 723</div>""", unsafe_allow_html=True)
+st.markdown("""<div style="font-size:12px; color: #5E6781; line-height: 1.7em;">Źródło: PBC badania eyetrackingowe dla wydań drukowanych i e-wydań, N=13 723</div>""", unsafe_allow_html=True)
 
 
